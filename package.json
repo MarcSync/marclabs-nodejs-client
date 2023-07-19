@@ -27,6 +27,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "marcsync": "^1.1.2-dev"
+    "marcsync": "^1.1.3-dev"
   }
 }
