@@ -5,8 +5,11 @@ export class Client {
     private _marcsyncClient: MarcSyncClient;
     private _userCollection: Collection;
 
-    constructor(acccesToken: string) {
-        this._marcsyncClient = new MarcSyncClient(acccesToken);
+    /**
+     * @param accessToken The access token of the MarcSync Database
+    */
+    constructor(accessToken: string) {
+        this._marcsyncClient = new MarcSyncClient(accessToken);
         this._userCollection = this._marcsyncClient.getCollection("marclabs-users");
     }
 
