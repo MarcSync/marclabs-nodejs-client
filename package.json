@@ -1,0 +1,32 @@
+{
+  "name": "marclabs-nodejs-client",
+  "version": "1.0.0",
+  "description": "A Client powered by MarcSync to manage your MarcLabs Collections, saved in MarcSync, easier.",
+  "main": "dist/marclabs.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rmdir /s /q dist && tsc && node generate-indexdts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcSync/marclabs-nodejs-client.git"
+  },
+  "keywords": [
+    "marclabs",
+    "marcsync",
+    "api",
+    "client"
+  ],
+  "author": "MarcTheDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcSync/marclabs-nodejs-client/issues"
+  },
+  "homepage": "https://github.com/MarcSync/marclabs-nodejs-client#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "marcsync": "^1.1.2-dev"
+  }
+}
